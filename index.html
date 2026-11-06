@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORLD ZERO | Build Your Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">WORLD<span>ZERO</span></div>
+    <div class="top-status">NATION SIMULATOR</div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">YOUR NATION. YOUR RULES.</div>
+
+      <h1>BUILD YOUR<br><span>OWN WORLD.</span></h1>
+
+      <p>
+        Create a country, establish your government,
+        manage your economy and shape the future
+        of your civilization.
+      </p>
+
+      <button onclick="startGame()">CREATE YOUR COUNTRY</button>
+    </div>
+
+    <div class="hero-footer">
+      WORLD ZERO © 2026
+      <span>GLOBAL SIMULATION PROJECT</span>
+    </div>
+  </main>
+
+  <section id="creation" class="creation hidden">
+    <div class="creation-box">
+      <div class="eyebrow">NATION ESTABLISHMENT</div>
+      <h2>Create your country</h2>
+      <p>Every great civilization starts somewhere.</p>
+
+      <label>Country name</label>
+      <input id="countryName" placeholder="e.g. Republic of Novara">
+
+      <label>Capital city</label>
+      <input id="capitalName" placeholder="e.g. Novaris">
+
+      <label>Government type</label>
+      <select id="government">
+        <option value="Republic">Republic</option>
+        <option value="Monarchy">Monarchy</option>
+        <option value="Democracy">Democracy</option>
+        <option value="Federation">Federation</option>
+      </select>
+
+      <button onclick="createCountry()">ESTABLISH NATION</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
