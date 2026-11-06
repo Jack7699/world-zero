@@ -14,7 +14,7 @@
     <div class="top-status">NATION SIMULATOR</div>
   </header>
 
-  <main class="hero">
+  <main class="hero" id="homepage">
     <div class="hero-content">
       <div class="eyebrow">YOUR NATION. YOUR RULES.</div>
 
@@ -35,6 +35,8 @@
     </div>
   </main>
 
+  <!-- COUNTRY CREATION -->
+
   <section id="creation" class="creation hidden">
     <div class="creation-box">
       <div class="eyebrow">NATION ESTABLISHMENT</div>
@@ -54,25 +56,47 @@
         <option value="Democracy">Democracy</option>
         <option value="Federation">Federation</option>
       </select>
-      <section id="dashboard" class="hidden">
-  <h1 id="dashboardCountry"></h1>
-  <p id="dashboardCapital"></p>
-  <p id="dashboardGovernment"></p>
-
-  <h2>National Statistics</h2>
-
-  <div>
-    <p>Population: <span id="population">10,000</span></p>
-    <p>Treasury: $<span id="treasury">5,000,000</span></p>
-    <p>Buildings: <span id="buildings">10</span></p>
-  </div>
-</section>
 
       <button onclick="createCountry()">ESTABLISH NATION</button>
     </div>
   </section>
 
+  <!-- COUNTRY DASHBOARD -->
+
+  <section id="dashboard" class="hidden">
+    <div class="dashboard-header">
+      <div class="logo">WORLD<span>ZERO</span></div>
+      <div class="top-status">NATIONAL GOVERNMENT</div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="eyebrow">YOUR COUNTRY</div>
+      <h1 id="dashboardCountry">COUNTRY NAME</h1>
+      <p id="dashboardCapital"></p>
+      <p id="dashboardGovernment"></p>
+
+      <h2>National Statistics</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p>Population</p>
+          <h2 id="population">10,000</h2>
+        </div>
+
+        <div class="stat-card">
+          <p>National Treasury</p>
+          <h2>$<span id="treasury">5,000,000</span></h2>
+        </div>
+
+        <div class="stat-card">
+          <p>Buildings</p>
+          <h2 id="buildings">10</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
+
 </body>
 </html>
-
